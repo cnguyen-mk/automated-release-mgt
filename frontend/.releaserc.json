@@ -1,5 +1,6 @@
 {
   "branches": ["main"],
+  "repositoryUrl": "https://github.com/cnguyen-mk/automated-release-mgt",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
@@ -10,6 +11,7 @@
         "failTitle": false
       }
     ],
+    "@semantic-release/npm",
     [
       "@semantic-release/git",
       {

@@ -6,6 +6,8 @@ on:
 
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   release:
@@ -25,7 +27,6 @@ jobs:
           cd ./frontend
           npm ci --legacy-peer-deps
       - name: Release
-          # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           cd ./frontend
           npm run build

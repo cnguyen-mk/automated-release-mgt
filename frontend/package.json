@@ -1,8 +1,15 @@
 {
-  "name": "automated-release",
+  "name": "@cnguyen-mk/frontend",
   "version": "1.0.0",
   "description": "test library",
   "main": "lib/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cnguyen-mk/automated-release-mgt.git"
+  },
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts,.tsx",
