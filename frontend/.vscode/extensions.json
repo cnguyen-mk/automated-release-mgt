@@ -1,0 +1,8 @@
+{
+	"recommendations": [
+		  "dbaeumer.vscode-eslint", "esbenp.prettier-vscode",
+  "ms-vscode.makefile-tools","shd101wyy.markdown-preview-enhanced","eamodio.gitlens"],
+	"unwantedRecommendations": [
+		
+	]
+}

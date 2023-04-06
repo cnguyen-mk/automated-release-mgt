@@ -1,0 +1,50 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+   "project": "./tsconfig.json"
+ },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "airbnb",
+    "airbnb-typescript"
+  ],
+  "rules": { 
+    "no-console":"off",
+    "no-void":"off",
+    "indent": "off", // We use prettier as the formatter instead, turn this off to avoid conflicts
+    "@typescript-eslint/indent": "off", // We use prettier as the formatter instead, turn this off to avoid conflicts
+    "prettier/prettier": 2, // Means error
+    "semi": ["error", "never"],
+    "@typescript-eslint/semi": "off",
+    "no-unexpected-multiline": "off",
+    "@typescript-eslint/comma-dangle":"off",
+    "react/jsx-one-expression-per-line":"off",
+    "react/require-default-props": "off",
+    "object-curly-newline":"off",
+    "no-unneeded-ternary": "off",
+    "react/react-in-jsx-scope":"off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-curly-newline": "off", // We use prettier as the formatter instead, turn this off to avoid conflicts
+    "operator-linebreak": "off",
+    "implicit-arrow-linebreak": "off",
+    "react/jsx-wrap-multilines": "off",
+    "function-paren-newline": "off",
+    "react/default-props-match-prop-types": "off",
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "react/no-unstable-nested-components": ["error",{"allowAsProps": true}],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}],
+    "react/function-component-definition": ["warn", {
+       "namedComponents": ["function-declaration", "arrow-function"]
+       }]
+  }
+}
