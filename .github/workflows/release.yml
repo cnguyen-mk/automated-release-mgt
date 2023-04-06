@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd ./frontend
-          npm ci
+          npm ci --legacy-peer-deps
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
