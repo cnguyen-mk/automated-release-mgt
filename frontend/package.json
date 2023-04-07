@@ -1,6 +1,6 @@
 {
   "name": "@cnguyen-mk/frontend",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "test library",
   "main": "lib/index.js",
   "publishConfig": {
