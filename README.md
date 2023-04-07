@@ -19,5 +19,11 @@ The table below shows which commit message gets you which release type when `sem
 | `feat(pencil): add 'graphiteWidth' option`                                                                                                                                                       | ~~Minor~~ Feature Release                                                                                       |
 | `perf(pencil): remove graphiteWidth option`<br><br>`BREAKING CHANGE: The graphiteWidth option has been removed.`<br>`The default graphite width of 10mm is always used for performance reasons.` | ~~Major~~ Breaking Release <br /> (Note that the `BREAKING CHANGE: ` token must be in the footer of the commit) |
 
+### Using semantic-release on github protected branch
+1. create a dedicated user
+2. assign this machine user admin permission on the repo
+3. create a personal access token by this user
+4. use the token in the pipeline
+
 #### How does commitizen work
 **commitizen** ensures your commit message is clear by context and easy to understand by other developer. When you commit with Commitizen, you will be prompted to fill out a commit based on the context such as `fix`, `feature` or `perf`, etc... This way we establish a consistent way of writing commit messages and make sure they conform to semantic-release standard and can be picked up by the tool for automated release management.
